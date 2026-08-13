@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: practice_source
+    database: PRACTICE_DATABASE
+    schema: PRACTICE_SCHEMA
+    tables:
+      - name: emp                   # dbt model reference name: {{ source('practice_source', 'emp') }}
+        identifier: EMPLOYEES       # Actual table name in Snowflake/database
+
+      - name: dept                  # dbt model reference name: {{ source('practice_source', 'dept') }}
+        identifier: DEPARTMENTS     # Actual table name in Snowflake/database
