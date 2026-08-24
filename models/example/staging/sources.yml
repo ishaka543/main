@@ -10,3 +10,5 @@ sources:
 
       - name: dept                  # dbt model reference name: {{ source('practice_source', 'dept') }}
         identifier: DEPARTMENTS     # Actual table name in Snowflake/database
+      - name: EMP_SOURCE
+        identifier: EMP_SOURCE
